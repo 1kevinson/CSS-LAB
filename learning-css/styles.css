@@ -17,10 +17,9 @@ fieldset {
   margin: 0 auto;
   background-color: #fff;
 }
-
-legend {
+fieldset legend {
   font-weight: bold;
   padding: 15px 20px;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */

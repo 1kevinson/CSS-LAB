@@ -1,0 +1,32 @@
+$color-border: #333;
+$color-bg: #f5f5f5;
+$color-white: #fff;
+$color-black: #000;
+$spacing-base: 20px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: $color-bg;
+    padding: $spacing-base;
+}
+
+fieldset {
+    border: 2px solid $color-border;
+    width: 70%;
+    padding: $spacing-base;
+    margin: 0 auto;
+    background-color: $color-white;
+
+    legend {
+        font-weight: bold;
+        padding: 15px $spacing-base;
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
