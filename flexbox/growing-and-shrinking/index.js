@@ -8,25 +8,12 @@ class ContainerResizerController {
     this.testContainer = document.getElementById('testContainer');
     this.rightResizer = document.getElementById('rightResizer');
     this.bottomResizer = document.getElementById('bottomResizer');
-    this.widthText = document.getElementById('widthText');
-    this.heightText = document.getElementById('heightText');
 
     // Track active drag operations
     this.isRightResizerDragging = false;
     this.isBottomResizerDragging = false;
 
     this.init();
-    this.updateDimensions();
-  }
-
-  /**
-   * Update the dimensions display
-   */
-  updateDimensions() {
-    const width = Math.round(this.testContainer.offsetWidth);
-    const height = Math.round(this.testContainer.offsetHeight);
-    this.widthText.textContent = `Width: ${width}`;
-    this.heightText.textContent = `Height: ${height}`;
   }
 
   /**
@@ -78,7 +65,6 @@ class ContainerResizerController {
       // Enforce minimum width
       if (newContainerWidth >= minContainerWidth) {
         this.testContainer.style.width = `${newContainerWidth}px`;
-        this.updateDimensions();
       }
     };
 
@@ -111,7 +97,6 @@ class ContainerResizerController {
       // Enforce minimum height
       if (newContainerHeight >= minContainerHeight) {
         this.testContainer.style.height = `${newContainerHeight}px`;
-        this.updateDimensions();
       }
     };
 

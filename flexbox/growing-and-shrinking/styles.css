@@ -6,28 +6,28 @@
 }
 
 body {
-  font-family: sans-serif;
-  background: hsla(247, 24%, 15%, 0.898);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(213, 255, 255, 0.8980392157);
   min-height: 100vh;
 }
 
 .lesson-title {
-  position: fixed;
-  top: 5.5%;
-  left: 17.5%;
+  top: 4.75%;
+  left: 15%;
   padding: 12px;
   color: #2c3e50;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   border-radius: 4px;
+  position: absolute;
   color: white;
   background-color: black;
 }
 
 .resizable-container {
-  position: fixed;
+  position: absolute;
   top: 10%;
-  left: 17.5%;
-  width: 75%;
+  left: 15%;
+  width: 70%;
   height: 80%;
   padding: 10px;
   cursor: default;
@@ -48,7 +48,7 @@ body {
 
 .resizer {
   position: absolute;
-  background-color: #85c1ef;
+  background-color: #a8b1b8;
   transition: background-color 0.2s ease;
 }
 .resizer:hover {
@@ -74,44 +74,6 @@ body {
   cursor: ns-resize;
 }
 
-.dimensions-display {
-  position: fixed;
-  top: 10%;
-  left: 4%;
-  background-color: rgba(255, 87, 31, 0.75);
-  color: white;
-  padding: 1rem;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 1.75rem;
-  pointer-events: none;
-  line-height: 1.4;
-}
-
 /* #endregion */
 /* #region Specific learning styles */
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-li {
-  list-style: none;
-  padding: 15px 0;
-}
-
-a {
-  text-decoration: none;
-  color: #2c3e50;
-}
-
-@media (min-width: 300px) {
-  /* Desktop styles */
-  ul {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
 /* #endregion *//*# sourceMappingURL=styles.css.map */
