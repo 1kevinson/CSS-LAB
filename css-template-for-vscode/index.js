@@ -25,8 +25,8 @@ class ContainerResizerController {
   updateDimensions() {
     const width = Math.round(this.testContainer.offsetWidth);
     const height = Math.round(this.testContainer.offsetHeight);
-    this.widthText.textContent = `width: ${width}`;
-    this.heightText.textContent = `height: ${height}`;
+    this.widthText.textContent = `Width: ${width}`;
+    this.heightText.textContent = `Height: ${height}`;
   }
 
   /**
@@ -130,3 +130,5 @@ class ContainerResizerController {
 document.addEventListener('DOMContentLoaded', () => {
   new ContainerResizerController();
 });
+
+

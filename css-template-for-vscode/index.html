@@ -9,19 +9,25 @@
 <body>
     <div class="container-wrapper">
         <div class="lesson-title">
-            <p>Practice title here</p>
+            <p>Directions and Alignment</p>
         </div>
         <div class="resizable-container" id="testContainer">
-            <div class="content">
-        
+            <div class="dimensions-display" id="dimensionsDisplay">
+                <span id="widthText">Width: 0</span><br>
+                <span id="heightText">Height: 0</span>
             </div>
-            
 
+            <div class="content">
+                
+            </div>
+
+            <!-- #region Resizers -->
             <!-- Right resizer (vertical bar) -->
             <div class="resizer resizer-right" id="rightResizer"></div>
             
             <!-- Bottom resizer (horizontal bar) -->
             <div class="resizer resizer-bottom" id="bottomResizer"></div>
+            <!-- #endregion -->
         </div>
     </div>
 
