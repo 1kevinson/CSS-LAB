@@ -4,11 +4,40 @@
 $resizer-width: 8px;
 $resizer-hover-color: #3498db;
 $resizer-default-color: #85c1ef;
-$container-default-width: 400px;
-$container-default-height: 300px;
+$container-default-width: 60%;
+$container-default-height: 72.5%;
 $container-border-color: #34495e;
 $container-background: #ecf0f1;
 $content-background: #ffffff;
+$background-color-wide: #c8f7ff;
+
+/* #region Font faces */
+@font-face {
+  font-family: "wotfardregular";
+  src: url("fonts/wotfard/regular/wotfard-regular-webfont.eot");
+  src:
+    url("fonts/wotfard/regular/wotfard-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/wotfard/regular/wotfard-regular-webfont.woff2") format("woff2"),
+    url("fonts/wotfard/regular/wotfard-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "wotfardlight";
+  src: url("fonts/wotfard/light/wotfard-light-webfont.eot");
+  src:
+    url("fonts/wotfard/light/wotfard-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/wotfard/light/wotfard-light-webfont.woff2") format("woff2"),
+    url("fonts/wotfard/light/wotfard-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* #endregion */
 
 // Reset and base styles
 * {
@@ -18,15 +47,15 @@ $content-background: #ffffff;
 }
 
 body {
-  font-family: sans-serif;
-  background: hsla(247, 24%, 15%, 0.898);
+  font-family: "wotfardregular", sans-serif;
+  background: $background-color-wide;
   min-height: 100vh;
 }
 
 .lesson-title {
   position: fixed;
-  top: 5.5%;
-  left: 17.5%;
+  top: 5%;
+  left: 20%;
   padding: 12px;
   color: #2c3e50;
   font-size: 1.5rem;
@@ -38,10 +67,10 @@ body {
 // Main container - FIXED dimensions (doubled)
 .resizable-container {
   position: fixed;
-  top: 10%;
-  left: 17.5%;
-  width: 75%;
-  height: 80%;
+  top: 12%;
+  left: 20%;
+  width: $container-default-width;
+  height: $container-default-height;
   padding: 5px;
   cursor: default;
   user-select: none;
@@ -56,6 +85,7 @@ body {
 
 .content {
   width: 100%;
+  padding-inline-end: 7px;
   background-color: $content-background;
   container-type: inline-size;
 }
@@ -96,8 +126,8 @@ body {
 // Dimension displayer
 .dimensions-display {
   position: fixed;
-  top: 10%;
-  left: 4%;
+  top: 12%;
+  left: 5%;
   background-color: rgba(255, 87, 31, 0.75);
   color: white;
   padding: 1rem;
@@ -111,34 +141,33 @@ body {
 /* #endregion */
 
 /* #region Specific learning styles */
-
-/* Mobile styles */
-ul {
-  margin: 0;
-  padding: 0;
+.content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: #2c3e50 solid 1px;
-  margin-inline-end: 7px;
+  gap: 0.35rem;
 }
 
-li {
-  list-style: none;
-  padding: 15px 0;
-}
+.article {
+  height: 100px;
+  border: solid 3px;
+  flex: 1 1 300px;
 
-a {
-  text-decoration: none;
-  color: #2c3e50;
-}
+  &.article-1 {
+    background-color: hsla(6, 100%, 71%, 0.7);
+    border-color: hsl(6, 77%, 69%);
+    min-width: 50px;
+  }
 
-@container (min-width: 430px) {
-  /* Desktop styles */
-  ul {
-    flex-direction: row;
-    justify-content: space-evenly;
+  &.article-2 {
+    background-color: hsla(48, 100%, 67%, 0.7);
+    border-color: hsl(48, 77%, 65%);
+    flex-shrink: 2;
+    min-width: 100px;
+  }
+
+  &.article-3 {
+    background-color: hsla(120, 100%, 67%, 0.7);
+    border-color: hsl(120, 77%, 65%);
+    min-width: 50px;
   }
 }
-
 /* #endregion */

@@ -112,26 +112,29 @@ body {
 /* #region Specific learning styles */
 .content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: 10px;
+  gap: 0.35rem;
 }
 
-article {
-  border: solid 1.5px rgb(220, 220, 220);
-  box-shadow: 0px 2px 24px hsla(0, 0%, 0%, 0.2);
-  border-radius: 5px;
-  padding: 15px;
-  flex: 1 1 250px;
-  max-width: 350px;
-  height: 500px;
+.article {
+  height: 100px;
+  border: solid 3px;
+  flex: 1 1 300px;
 }
-article img {
-  width: 100%;
+.article.article-1 {
+  background-color: hsla(6, 100%, 71%, 0.7);
+  border-color: hsl(6, 77%, 69%);
+  min-width: 50px;
 }
-article section h2 {
-  margin-block: 10px;
+.article.article-2 {
+  background-color: hsla(48, 100%, 67%, 0.7);
+  border-color: hsl(48, 77%, 65%);
+  flex-shrink: 2;
+  min-width: 100px;
+}
+.article.article-3 {
+  background-color: hsla(120, 100%, 67%, 0.7);
+  border-color: hsl(120, 77%, 65%);
+  min-width: 50px;
 }
 
 /* #endregion *//*# sourceMappingURL=styles.css.map */

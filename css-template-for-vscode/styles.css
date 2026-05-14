@@ -61,7 +61,7 @@ body {
 
 .content {
   width: 100%;
-  padding-inline-end: 10px;
+  padding-inline-end: 7px;
   background-color: #ffffff;
   container-type: inline-size;
 }

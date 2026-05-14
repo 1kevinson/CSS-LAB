@@ -16,7 +16,8 @@ $background-color-wide: #c8f7ff;
   font-family: "wotfardregular";
   src: url("fonts/wotfard/regular/wotfard-regular-webfont.eot");
   src:
-    url("fonts/wotfard/regular/wotfard-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/wotfard/regular/wotfard-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
     url("fonts/wotfard/regular/wotfard-regular-webfont.woff2") format("woff2"),
     url("fonts/wotfard/regular/wotfard-regular-webfont.ttf") format("truetype");
   font-weight: normal;
@@ -28,7 +29,8 @@ $background-color-wide: #c8f7ff;
   font-family: "wotfardlight";
   src: url("fonts/wotfard/light/wotfard-light-webfont.eot");
   src:
-    url("fonts/wotfard/light/wotfard-light-webfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/wotfard/light/wotfard-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
     url("fonts/wotfard/light/wotfard-light-webfont.woff2") format("woff2"),
     url("fonts/wotfard/light/wotfard-light-webfont.ttf") format("truetype");
   font-weight: normal;
@@ -83,7 +85,7 @@ body {
 
 .content {
   width: 100%;
-  padding-inline-end: 10px;
+  padding-inline-end: 7px;
   background-color: $content-background;
   container-type: inline-size;
 }

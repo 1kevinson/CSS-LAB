@@ -1,4 +1,22 @@
 /* #region STYLE OF THE RESIZABLE CONTAINER */
+/* #region Font faces */
+@font-face {
+  font-family: "wotfardregular";
+  src: url("fonts/wotfard/regular/wotfard-regular-webfont.eot");
+  src: url("fonts/wotfard/regular/wotfard-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/wotfard/regular/wotfard-regular-webfont.woff2") format("woff2"), url("fonts/wotfard/regular/wotfard-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "wotfardlight";
+  src: url("fonts/wotfard/light/wotfard-light-webfont.eot");
+  src: url("fonts/wotfard/light/wotfard-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/wotfard/light/wotfard-light-webfont.woff2") format("woff2"), url("fonts/wotfard/light/wotfard-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* #endregion */
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +24,15 @@
 }
 
 body {
-  font-family: sans-serif;
-  background: hsla(247, 24%, 15%, 0.898);
+  font-family: "wotfardregular", sans-serif;
+  background: #c8f7ff;
   min-height: 100vh;
 }
 
 .lesson-title {
   position: fixed;
-  top: 5.5%;
-  left: 17.5%;
+  top: 5%;
+  left: 20%;
   padding: 12px;
   color: #2c3e50;
   font-size: 1.5rem;
@@ -25,10 +43,10 @@ body {
 
 .resizable-container {
   position: fixed;
-  top: 10%;
-  left: 17.5%;
-  width: 75%;
-  height: 80%;
+  top: 12%;
+  left: 20%;
+  width: 60%;
+  height: 72.5%;
   padding: 5px;
   cursor: default;
   -webkit-user-select: none;
@@ -43,6 +61,7 @@ body {
 
 .content {
   width: 100%;
+  padding-inline-end: 7px;
   background-color: #ffffff;
   container-type: inline-size;
 }
@@ -77,8 +96,8 @@ body {
 
 .dimensions-display {
   position: fixed;
-  top: 10%;
-  left: 4%;
+  top: 12%;
+  left: 5%;
   background-color: rgba(255, 87, 31, 0.75);
   color: white;
   padding: 1rem;

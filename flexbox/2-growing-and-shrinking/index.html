@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizable Container - CSS Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="lesson-title">
+            <p>Growing and shrinking</p>
+        </div>
+        <div class="resizable-container" id="testContainer">
+            <div class="dimensions-display" id="dimensionsDisplay">
+                <span id="widthText">Width: 0</span><br>
+                <span id="heightText">Height: 0</span>
+            </div>
+
+            <div class="content">
+                <article class="article article-1"></article>
+                <article class="article article-2"></article>
+                <article class="article article-3"></article>
+            </div>
+
+            <!-- #region Resizers -->
+            <!-- Right resizer (vertical bar) -->
+            <div class="resizer resizer-right" id="rightResizer"></div>
+            
+            <!-- Bottom resizer (horizontal bar) -->
+            <div class="resizer resizer-bottom" id="bottomResizer"></div>
+            <!-- #endregion -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
