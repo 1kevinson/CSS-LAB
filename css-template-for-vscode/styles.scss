@@ -4,11 +4,25 @@
 $resizer-width: 8px;
 $resizer-hover-color: #3498db;
 $resizer-default-color: #85c1ef;
-$container-default-width: 400px;
-$container-default-height: 300px;
+$container-default-width: 55%;
+$container-default-height: 72.5%;
 $container-border-color: #34495e;
 $container-background: #ecf0f1;
 $content-background: #ffffff;
+$background-color-wide: #c8f7ff;
+
+@font-face {
+  font-family: "wotfardregular";
+  src: url("fonts/wotfard/wotfard-regular-webfont.eot");
+  src:
+    url("fonts/wotfard/wotfard-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/wotfard/wotfard-regular-webfont.woff2") format("woff2"),
+    url("fonts/wotfard/wotfard-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 // Reset and base styles
 * {
@@ -18,15 +32,15 @@ $content-background: #ffffff;
 }
 
 body {
-  font-family: sans-serif;
-  background: hsla(247, 24%, 15%, 0.898);
+  font-family: "wotfardregular", sans-serif;
+  background: $background-color-wide;
   min-height: 100vh;
 }
 
 .lesson-title {
   position: fixed;
-  top: 5.5%;
-  left: 17.5%;
+  top: 5%;
+  left: 20%;
   padding: 12px;
   color: #2c3e50;
   font-size: 1.5rem;
@@ -38,10 +52,10 @@ body {
 // Main container - FIXED dimensions (doubled)
 .resizable-container {
   position: fixed;
-  top: 10%;
-  left: 17.5%;
-  width: 75%;
-  height: 80%;
+  top: 12%;
+  left: 20%;
+  width: $container-default-width;
+  height: $container-default-height;
   padding: 5px;
   cursor: default;
   user-select: none;
@@ -97,8 +111,8 @@ body {
 // Dimension displayer
 .dimensions-display {
   position: fixed;
-  top: 10%;
-  left: 4%;
+  top: 12%;
+  left: 5%;
   background-color: rgba(255, 87, 31, 0.75);
   color: white;
   padding: 1rem;
@@ -112,6 +126,5 @@ body {
 /* #endregion */
 
 /* #region Specific learning styles */
-
 
 /* #endregion */
