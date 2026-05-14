@@ -147,17 +147,15 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  gap: 10px;
+  gap: .45rem;
 }
 
 article {
   border: solid 1.5px rgb(220, 220, 220);
   box-shadow: 0px 2px 24px hsl(0deg 0% 0% / 0.2);
   border-radius: 5px;
-  padding: 15px;
-  flex: 1 1 250px;
-  max-width: 350px;
-  height: 500px;
+  padding: 7px;
+  flex: 1 1 150px;
 
   & img {
     width: 100%;
