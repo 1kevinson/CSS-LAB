@@ -1,11 +1,13 @@
+// Utilisé pour les styles liés à la typographie, comme les polices personnalisées, les styles de texte, les tailles de police, etc.
+
 @font-face {
   font-family: "wotfardregular";
-  src: url("fonts/wotfard/regular/wotfard-regular-webfont.eot");
+  src: url("../fonts/wotfard/regular/wotfard-regular-webfont.eot");
   src:
-    url("fonts/wotfard/regular/wotfard-regular-webfont.eot?#iefix")
+    url("../fonts/wotfard/regular/wotfard-regular-webfont.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/wotfard/regular/wotfard-regular-webfont.woff2") format("woff2"),
-    url("fonts/wotfard/regular/wotfard-regular-webfont.ttf") format("truetype");
+    url("../fonts/wotfard/regular/wotfard-regular-webfont.woff2") format("woff2"),
+    url("../fonts/wotfard/regular/wotfard-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -13,9 +15,9 @@
 
 @font-face {
   font-family: "wotfardlight";
-  src: url("fonts/wotfard/light/wotfard-light-webfont.eot");
+  src: url("../fonts/wotfard/light/wotfard-light-webfont.eot");
   src:
-    url("fonts/wotfard/light/wotfard-light-webfont.eot?#iefix")
+    url("../fonts/wotfard/light/wotfard-light-webfont.eot?#iefix")
       format("embedded-opentype"),
     url("fonts/wotfard/light/wotfard-light-webfont.woff2") format("woff2"),
     url("fonts/wotfard/light/wotfard-light-webfont.ttf") format("truetype");

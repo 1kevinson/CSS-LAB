@@ -1,0 +1,5 @@
+// Utilisé pour des fonctions personnalisées, comme la conversion de px à rem
+
+@function rem($px) {
+  @return $px / 16px * 1rem;
+}

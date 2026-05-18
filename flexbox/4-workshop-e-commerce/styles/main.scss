@@ -1,5 +1,4 @@
 // main.scss
-// L'ordre est IMPORTANT : abstracts d'abord, vendors ensuite
 
 // 1. Abstracts
 @use 'abstracts/variables';
@@ -15,13 +14,13 @@
 @use 'base/base';
 
 // 4. Layout
-@use 'layout/containers';
-@use 'layout/grid';
+@use 'layout/page-grid';
 @use 'layout/header';
+@use 'layout/containers';
 @use 'layout/footer';
 
 // 5. Components
-//@use 'components/button';
+@use 'components/page-header';
 //@use 'components/navbar';
 
 // 6. Pages
