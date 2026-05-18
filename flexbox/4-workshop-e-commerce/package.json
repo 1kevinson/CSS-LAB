@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "sass:dev": "sass --color --watch --style=expanded --source-map ./styles.scss:styles/main.css",
+    "sass:build": "sass --no-source-map --style=compressed .styles.scss:styles/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.99.0"
+  }
+}

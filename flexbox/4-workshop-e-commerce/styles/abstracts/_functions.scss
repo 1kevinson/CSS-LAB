@@ -1,5 +1,5 @@
 // Utilisé pour des fonctions personnalisées, comme la conversion de px à rem
 
-@function rem($px) {
-  @return $px / 16px * 1rem;
+@function rem($px, $base: 16) {
+  @return calc($px / $base) * 1rem;
 }

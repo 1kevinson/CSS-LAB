@@ -1,5 +1,10 @@
+@use '../abstracts/functions';
+@use '../abstracts/variables';
+
 header {
     & h1 {
-        font-size: rem(62px);
+       font-size: functions.rem(22);
+       color: variables.$color-primary;
+       font-weight: variables.$font-weight-bold;
     }
 }
