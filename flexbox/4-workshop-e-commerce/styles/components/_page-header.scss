@@ -4,7 +4,28 @@
 header {
     & h1 {
        font-size: functions.rem(22);
-       color: variables.$color-primary;
+       color: variables.$color-text;
        font-weight: variables.$font-weight-bold;
+    }
+
+    & nav {
+        margin-top: functions.rem(10);
+
+        & ul {
+            display: flex;
+            gap: functions.rem(15);
+            list-style: none;
+        }
+
+        & a {
+            text-decoration: none;
+            color: variables.$color-text;
+            font-weight: variables.$font-weight-medium;
+            te
+
+            &:hover {
+                color: variables.$color-primary;
+            }
+        }
     }
 }
