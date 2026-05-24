@@ -89,6 +89,8 @@ header nav a {
   color: #2d2d2d;
   font-weight: 500;
 }
-te header nav a:hover {
+header nav a:hover {
   color: #4c63d2;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
