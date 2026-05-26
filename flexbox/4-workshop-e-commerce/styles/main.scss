@@ -15,13 +15,12 @@
 
 // 4. Layout
 @use 'layout/annoucement';
-@use 'layout/header';
+@use 'layout/navbar';
 @use 'layout/containers';
 @use 'layout/footer';
 
 // 5. Components
-@use 'components/page-header';
-//@use 'components/navbar';
+@use 'components/navbar';
 
 // 6. Pages
 @use 'pages/home';
