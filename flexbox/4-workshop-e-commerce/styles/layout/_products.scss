@@ -1,0 +1,7 @@
+@use '../abstracts/functions';
+
+.l-products {
+    display: flex;
+    flex-direction: column;
+    gap: functions.rem(20);
+}

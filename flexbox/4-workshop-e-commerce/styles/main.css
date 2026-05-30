@@ -89,6 +89,12 @@ body {
   gap: 1.25rem;
 }
 
+.l-products {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .c-navbar {
   padding: 0.4375rem 0.25rem;
   border-bottom: solid 1px #e8e8e8;
@@ -155,6 +161,10 @@ body {
 }
 .c-sidebar__categories a {
   text-decoration: none;
+}
+
+.c-products {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -19,12 +19,14 @@
 @use 'layout/navbar' as layout-navbar;
 @use 'layout/product-content' as layout-product-content;
 @use 'layout/sidebar' as layout-sidebar;
+@use 'layout/products' as layour-products;
 @use 'layout/footer';
 
 // 5. Components
 @use 'components/navbar' as component-navbar;
 @use 'components/product-content' as component-product-content;
 @use 'components/sidebar' as component-sidebar;
+@use 'components/products' as component-products;
 
 // 6. Pages
 @use 'pages/home';
