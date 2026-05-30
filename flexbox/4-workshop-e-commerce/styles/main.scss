@@ -1,4 +1,4 @@
-// main.scss
+// main.scss (l'ordre est important)
 
 // 1. Abstracts
 @use 'abstracts/variables';
@@ -14,13 +14,13 @@
 @use 'base/base';
 
 // 4. Layout
-@use 'layout/annoucement';
-@use 'layout/navbar';
-@use 'layout/containers';
+@use 'layout/global-page';
+@use 'layout/announcement';
+@use 'layout/navbar' as layout-navbar;
 @use 'layout/footer';
 
 // 5. Components
-@use 'components/navbar';
+@use 'components/navbar' as component-navbar;
 
 // 6. Pages
 @use 'pages/home';
