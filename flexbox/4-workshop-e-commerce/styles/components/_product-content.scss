@@ -1,0 +1,5 @@
+@use '../abstracts/functions';
+
+.c-product-content {
+    margin-block-start: functions.rem(70);
+}

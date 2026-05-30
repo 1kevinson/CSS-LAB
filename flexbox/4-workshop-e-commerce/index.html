@@ -7,33 +7,51 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <div class="page-container">
-      <header class="navbar">
-        <h1>Sole & Ankle</h1> 
-        <nav>
+    <div class="l-page-container">
+      <header class="l-navbar c-navbar">
+        <h1 class="c-navbar__title">Sole & Ankle</h1>
+        <nav class="c-navbar__links">
           <ul>
-            <li><a href="#">Sale</a></li>
-            <li><a href="#">New releases</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Collections</a></li>
+            <li><a class="c-navbar__links--active" href="#">Sale</a></li>
+            <li><a class="c-navbar__links--inactive" href="#">New releases</a></li>
+            <li><a class="c-navbar__links--inactive" href="#">Men</a></li>
+            <li><a class="c-navbar__links--inactive" href="#">Women</a></li>
+            <li><a class="c-navbar__links--inactive" href="#">Kids</a></li>
+            <li><a class="c-navbar__links--inactive" href="#">Collections</a></li>
+          </ul>
         </nav>
       </header>
-      <div class="content">
-        <div class="sidebar">
-          <span class="sidebar__breadcrum">Home / Sale / Shoes</span>
-          <aside class="sidebar__categories">
+      <div class="l-product-content c-product-content">
+        <div class="l-sidebar c-sidebar">
+          <span class="c-sidebar__breadcrum">Home / Sale / Shoes</span>
+          <aside class="c-sidebar__categories">
             <ul>
-              <li><a href="#">Running</a></li>
-              <li><a href="#">Casual</a></li>
-              <li><a href="#">Formal</a></li>
+              <li><a class="c-sidebar__categories--inactive" href="#">Lifestyle</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Jordan</a></li>
+              <li><a class="c-sidebar__categories--active"  href="#">Running</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Basketball</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Training & Gym</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Football</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Skateboarding</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">American Football</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Baseball</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Golf</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Tennis</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Athletics</a></li>
+              <li><a class="c-sidebar__categories--inactive"  href="#">Walking</a></li>
             </ul>
           </aside>
         </div>
 
-        <div class="products">
-          <div class="products__header"></div>
+        <div class="l-products">
+          <div class="c-header">
+            <span class="c-header__title">Running</span>
+            <select name="shoes" id="shoes">
+              <option value="releases" selected>Newest releases</option>
+              <option value="year">This year</option>
+              <option value="month">Last month</option>
+            </select>
+          </div>
           <main class="products__grid">
             <div class="product-card">
               <img src="https://via.placeholder.com/150" alt="Shoe 1" />

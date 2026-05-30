@@ -1,25 +1,43 @@
 @use '../abstracts/functions';
 @use '../abstracts/variables';
 
-header {
-    & h1 {
-       font-size: functions.rem(22);
+.c-navbar {
+    padding: functions.rem(7) functions.rem(4);
+    border-bottom: solid 1px variables.$color-border;
+
+    &__title {
+       font-size: functions.rem(25);
        color: variables.$color-text;
+       padding-inline-start: functions.rem(25);
        font-weight: variables.$font-weight-bold;
+       flex-shrink: 0;
     }
 
-    & nav {
-        margin-top: functions.rem(10);
+    &__links {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        &--inactive {
+            color: variables.$color-text;
+        }
+
+        &--active {
+            color: variables.$color-primary;
+        }
 
         & ul {
             display: flex;
-            gap: functions.rem(15);
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+            gap: functions.rem(45);
             list-style: none;
         }
 
         & a {
+            font-size: functions.rem(17);
             text-decoration: none;
-            color: variables.$color-text;
             font-weight: variables.$font-weight-medium;
 
             &:hover {
