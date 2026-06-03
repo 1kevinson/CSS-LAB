@@ -94,6 +94,10 @@ body {
   flex-direction: column;
   gap: 1.25rem;
 }
+.l-products__header {
+  display: flex;
+  flex-direction: row;
+}
 
 .c-navbar {
   padding: 0.4375rem 0.25rem;
@@ -165,6 +169,18 @@ body {
 
 .c-products {
   flex-grow: 1;
+}
+.c-products__header__filter {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.9375rem;
+  align-items: baseline;
+  padding-inline-end: 0.9375rem;
+}
+.c-products__header__filter select {
+  padding: 0.3125rem;
 }
 
 /*# sourceMappingURL=main.css.map */

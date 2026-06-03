@@ -3,4 +3,24 @@
 
 .c-products {
   flex-grow: 1;
+
+  &__header {
+    &__title {
+    }
+
+    &__filter {
+      flex-grow: 1;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: functions.rem(15);
+      align-items: baseline;
+      padding-inline-end: functions.rem(15);
+
+      & select {
+        padding: functions.rem(5);
+      }
+    }
+  }
 }

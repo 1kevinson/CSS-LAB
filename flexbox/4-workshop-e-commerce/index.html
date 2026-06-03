@@ -44,13 +44,16 @@
         </div>
 
         <div class="l-products c-products">
-          <div class="c-products__header">
+          <div class="l-products__header c-products__header">
             <span class="c-products__header__title">Running</span>
-            <select name="shoes" id="shoes">
+            <div class="c-products__header__filter">
+              <span>Sort</span>
+              <select name="filter" id="shoes">
               <option value="releases" selected>Newest releases</option>
               <option value="year">This year</option>
               <option value="month">Last month</option>
             </select>
+            </div>
           </div>
           <main class="l-products__grid">
             <div class="c-product-card">
