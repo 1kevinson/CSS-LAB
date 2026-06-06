@@ -1,0 +1,11 @@
+@use '../abstracts/functions';
+@use '../abstracts/variables';
+
+.c-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-block: functions.rem(15);
+    background-color: variables.$color-background-bar;
+    color: variables.$color-white;
+}

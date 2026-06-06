@@ -1,4 +1,8 @@
+@use '../abstracts/functions';
+
 .l-product-content {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    margin-block-end: functions.rem(40);
 }

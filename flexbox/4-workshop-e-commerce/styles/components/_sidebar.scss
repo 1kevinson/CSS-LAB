@@ -5,6 +5,8 @@
   flex: 0 0 functions.rem(250);
 
   &__breadcrum {
+    display: flex;
+    align-items: center;
     color: variables.$color-text-gray;
     padding-inline-start: functions.rem(25);
   }
