@@ -14,13 +14,23 @@ $color-white: #ffffff;
 // Accent Colors
 $color-pink: #d63384;
 $color-blue: #4c63d2;
+$color-gray: #b0b0b0;
 
-// Semantic Color Aliases
+// Main Color Aliases
 $color-primary: $color-blue;
 $color-secondary: $color-pink;
-$color-text: $color-charcoal;
+$color-ternary: $color-gray;
+
+// Color text
+$color-text-black: $color-charcoal;
 $color-text-gray: $color-medium-gray;
-$color-background-bar: $color-black;
+$color-text-white: $color-white;
+
+// Color background
+$color-background-black: $color-black;
+$color-background-white: $color-white;
+
+// Color border
 $color-border: $color-pale-gray;
 
 // fonts weights

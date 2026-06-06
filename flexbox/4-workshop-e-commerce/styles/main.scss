@@ -14,19 +14,21 @@
 @use 'base/base';
 
 // 4. Layout
-@use 'layout/announcement';
+@use 'layout/announcement' as layout-announcement;
 @use 'layout/page-container';
 @use 'layout/navbar' as layout-navbar;
 @use 'layout/product-content' as layout-product-content;
 @use 'layout/sidebar' as layout-sidebar;
 @use 'layout/products' as layout-products;
+@use 'layout/product-card' as layout-product-card;
 
 // 5. Components
+@use 'components/announcement' as component-announcement;
 @use 'components/navbar' as component-navbar;
 @use 'components/product-content' as component-product-content;
 @use 'components/sidebar' as component-sidebar;
 @use 'components/products' as component-products;
-@use 'components/product-card';
+@use 'components/product-card' as component-product-card;
 @use 'components/footer';
 
 // 6. Pages

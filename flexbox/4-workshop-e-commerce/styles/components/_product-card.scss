@@ -1,1 +1,45 @@
 @use "../abstracts/functions";
+@use "../abstracts/variables";
+
+.c-product-card {
+  &__badge {
+    position: absolute;
+
+    border: solid 1px variables.$color-border;
+    border-radius: functions.rem(3);
+    padding: functions.rem(5) functions.rem(10);
+    top: functions.rem(10);
+    right: functions.rem(-5);
+    color: variables.$color-text-white;
+
+    &--released {
+      background-color: variables.$color-primary;
+    }
+
+    &--sale {
+      background-color: variables.$color-secondary;
+    }
+
+    &--outstock {
+      background-color: variables.$color-ternary;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    padding-block: functions.rem(8);
+  }
+
+  &__cta {
+    background-color: variables.$color-background-black;
+    border: double 1px variables.$color-pale-gray;
+    color: variables.$color-text-white;
+
+    &:hover {
+      cursor: pointer;
+      background-color: variables.$color-background-white;
+      color: variables.$color-text-black;
+    }
+  }
+}

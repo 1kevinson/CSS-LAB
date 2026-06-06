@@ -23,6 +23,10 @@
 
       & select {
         padding: functions.rem(5);
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

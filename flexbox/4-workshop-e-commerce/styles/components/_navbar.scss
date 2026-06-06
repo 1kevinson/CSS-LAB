@@ -7,7 +7,7 @@
 
     &__title {
        font-size: functions.rem(25);
-       color: variables.$color-text;
+       color: variables.$color-text-black;
        padding-inline-start: functions.rem(25);
        font-weight: variables.$font-weight-bold;
        flex-shrink: 0;
@@ -19,7 +19,7 @@
         flex-shrink: 0;
 
         &--inactive {
-            color: variables.$color-text;
+            color: variables.$color-text-black;
         }
 
         &--active {
